@@ -15,6 +15,14 @@ pub fn is_close(first: DHFloat, second: DHFloat) -> bool{
     return is_close_ex(first, second, None, None);
 }
 
+pub fn float_le(first: DHFloat, second: DHFloat) -> bool{
+    return is_close(first, second) || first < second;
+}
+
+pub fn float_gt(first: DHFloat, second: DHFloat) -> bool{
+    return !is_close(first, second) && first > second;
+}
+
 #[derive(Debug, Clone)]
 pub struct Point{
     pub x:DHFloat,

@@ -5,5 +5,5 @@ This is a learner project, it is first one that I write using the rust language.
 
 ## Features
 
-* Point inclusion checks (in progress)
+* Point inclusion checks: Winding number calculation for arbitrary polygons
 * Polygon clipping (TODO)
